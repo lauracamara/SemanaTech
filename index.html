@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semana Tech 2026 - Oficinas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <button id="botao-menu">☰</button>
+
+      <button id="botao-tema">🌙</button>
+
+      <div class="logo">Semana <span>Tech</span> 2026</div>
+
+      <a
+        href="inscricoes.html"
+        class="minhas-inscricoes"
+        id="contador-inscricoes"
+        >Minhas inscrições (0)</a
+      >
+
+      <nav id="menu">
+        <a href="index.html">Início</a>
+        <a href="index.html">Oficinas</a>
+        <a href="inscricoes.html">Minhas inscrições</a>
+        <a href="minha-conta.html">Minha Conta</a>
+      </nav>
+    </header>
+
+    <div class="carrossel">
+      <div class="lista-carrossel" id="lista-carrossel">
+        <div class="item-carrossel">
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP.TG5pg9YuRGD8AgC1dpM47wHaC9?r=0&rs=1&pid=ImgDetMain&o=7&rm=3/seed/semanatech1/1100/350"
+            alt="Semana Tech 2026"
+          />
+          <div class="legenda-item">Semana Tech 2026</div>
+        </div>
+        <div class="item-carrossel">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.i6fBDg0pPMKbiJ5Cb0AxRgHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3/seed/semanatech3/1100/350"
+            alt="Oficinas de Programação"
+          />
+          <div class="legenda-item">Oficinas de Programação</div>
+        </div>
+        <div class="item-carrossel">
+          <img
+            src="https://tse3.mm.bing.net/th/id/OIP.Tav4xNExU0qNgjlFCveuhAHaEE?r=0&rs=1&pid=ImgDetMain&o=7&rm=3/seed/semanatech3/1100/350"
+            alt="Tecnologia e Inovação"
+          />
+          <div class="legenda-item">Tecnologia e Inovação</div>
+        </div>
+        <div class="item-carrossel">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.268Q3JhiMjQTVVDAihefPwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3/seed/semanatech4/1100/350"
+            alt="Aprenda na prática"
+          />
+          <div class="legenda-item">Aprenda na prática</div>
+        </div>
+      </div>
+      <button class="botao-carrossel anterior">&#10094;</button>
+      <button class="botao-carrossel proximo">&#10095;</button>
+    </div>
+
+    <div class="painel-filtros">
+      <input type="text" id="campo-busca" placeholder="Buscar oficina..." />
+      <select id="ordenar">
+        <option value="">Selecione</option>
+        <option value="menor">Menor valor</option>
+        <option value="maior">Maior valor</option>
+      </select>
+    </div>
+
+    <main>
+      <div class="lista-oficinas" id="lista-oficinas"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
